@@ -15,6 +15,9 @@
 // console.log(person.greeting())
 
 
+
+
+
 class Car{
     
 constructor(name,color,price,year){
@@ -22,15 +25,35 @@ constructor(name,color,price,year){
         this.color=color;
         this.price=price;
         this.year=year;
+        this.enginestart=false;
+        this.enginestop=false;
     }
 
     startEngine(){
-        console.log(this.name+' Engine Started');
+        if(this.enginestart==true){
+        console.log(this.name+' Engine already Started');}
+        else{
+            this.enginestart=true;
+            console.log(this.name+' Engine Started');  
+        }
     }
-   
+    StopEngine(){
+        if(this.enginestop==true){
+        console.log(this.name+' Engine already Stop');}
+        else{
+            this.enginestop=true;
+            console.log(this.name+' Engine Stop');
+        }
+    }   
 }
 var car1=new Car('GMC','RED',7000,2024);
 var car2=new Car('BMW','GREEN',5000,2024);
 
 car1.startEngine();
-car2.startEngine();
+car1.startEngine();
+car2.StopEngine();
+car2.StopEngine();
+
+
+
+
