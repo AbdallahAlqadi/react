@@ -228,8 +228,8 @@ constructor(name,color,price,year,models,maxspeed,drivemode,engin,handewight,ful
 
 
 
-    var beakup=new Beakup('AA ','grean',4000,2024,2021,220,'street','zz');
+    var beakup=new Beakup('AA ','grean',4000,2024,2021,220,'street','zz',200,'WW',100);
     beakup.startengine()
-   
+
     
 
