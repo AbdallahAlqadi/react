@@ -91,7 +91,22 @@ this.notchangecharctar=true;
         }
     }
 
+ delete(){
+    this.name=null;
+ this.price=null;
+ this.clothing=null;
+ }
+
+ update(name,price,clothing){
+    this.nam=name;
+    this.price=price;
+    this.clothing=clothing;
+
+ }
+
+ 
 }
+
 
 
 var player1=new Player_Character('AA',700,'lava');
@@ -102,3 +117,11 @@ var player1=new Player_Character('AA',700,'lava');
  player1.character_change()
  player2. character_not_change()
  player2. character_not_change()
+ player2.delete()
+ player2. character_not_change()
+ console.log(player2)
+
+
+
+ player1.update('SS',250,'lava')
+console.log(player1)
