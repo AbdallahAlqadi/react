@@ -229,7 +229,11 @@ constructor(name,color,price,year,models,maxspeed,drivemode,engin,handewight,ful
 
 
     var beakup=new Beakup('AA ','grean',4000,2024,2021,220,'street','zz',200,'WW',100);
+   var cvu =new Cvu('BB','yellow',10000,2024,2020,210,'mountainous','mm','chaires',150)
+
     beakup.startengine()
+    cvu.startengine()
+
 
     
 
