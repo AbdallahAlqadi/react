@@ -192,7 +192,7 @@ console.log(this.name+'engine allready started');
 
  Drivemode(drivemode){
 this.drivemode=drivemode;
-
+console.log('drive mode is: '+this.drivemode)
 }
 
 }
@@ -214,12 +214,17 @@ constructor(name,color,price,year,models,maxspeed,drivemode,engin,chaires,height
 //class3
 
 class Beakup extends CarFactory{
-constructor(name,color,price,year,models,maxspeed,drivemode,engin,handewight,fultype,weels,cylendres){
+constructor(name,color,price,year,models,maxspeed,drivemode,engin,handelwight,fultype,weels,cylendres){
    super (name,color,price,year,models,maxspeed,drivemode,engin)
-    this.handewight=handewight;
+    this.handelwight=handelwight;
     this.fultype=fultype;
     this.weels=weels;
     this.cylendres=cylendres;
+}
+
+WeelChange(weels){
+ this.weels=weels;
+ console.log('new weels '+this.weels)
 }
 }
 
@@ -233,7 +238,7 @@ constructor(name,color,price,year,models,maxspeed,drivemode,engin,handewight,ful
 
     beakup.startengine()
     cvu.startengine()
-
-
+    cvu.Drivemode('mountainous')
+beakup.WeelChange('green')
     
 
