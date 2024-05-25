@@ -1,4 +1,5 @@
-import React from 'react';
+  //   import React(اسم fun) from 'react'(اسم الصفحه);
+  import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
