@@ -239,6 +239,7 @@ WeelChange(weels){
     beakup.startengine()
     cvu.startengine()
     cvu.Drivemode('mountainous')
+    beakup.Drivemode('street')
 beakup.WeelChange('green')
     
 
