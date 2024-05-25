@@ -235,11 +235,13 @@ WeelChange(weels){
 
     var beakup=new Beakup('AA ','grean',4000,2024,2021,220,'street','zz',200,'WW',100);
    var cvu =new Cvu('BB','yellow',10000,2024,2020,210,'mountainous','mm','chaires',150)
+   var carfactory=new CarFactory('VV ','Black',13000,2024,2004,200,'street','gg');
 
+   carfactory.startengine()
     beakup.startengine()
     cvu.startengine()
     cvu.Drivemode('mountainous')
     beakup.Drivemode('street')
 beakup.WeelChange('green')
-    
+
 
