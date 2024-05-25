@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import NewHeades from './NewHeades';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+root.render(    // <App />   اسم fun 
   <React.StrictMode>
-    <App />
+    <App /> 
+    <NewHeades /> 
+
   </React.StrictMode>
 );
 
