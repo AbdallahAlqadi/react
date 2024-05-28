@@ -42,7 +42,11 @@
 display: grid;
 grid-template-columns: auto auto auto auto auto auto;
 
-margin-top: 25px;
 
+background-color: #71e504;
+height: 80px;
+padding-top: 35px;
+font-size: larger;
+font-weight: bolder;
 }
 

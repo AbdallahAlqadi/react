@@ -21,6 +21,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
 <BrowserRouter>
 
 <div id="NavBar"> 
+
 <ul>
   <Link to="/Home"> Home</Link>   
  
@@ -40,6 +41,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
   <ul >
   <Link to="/page4"> Page4</Link>    
   </ul>
+
   </div>
   <Routes>  
   <Route path='/Home' element={<index />}/>
