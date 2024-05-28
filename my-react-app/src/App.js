@@ -19,6 +19,7 @@ const ReportWebVitals=()=>reportWebVitals
 function App() { //جزئيه routes بتتحقق اذا كبست على NewHeaders بعرض  محتواها
   return (
 <BrowserRouter>
+
 <div id="NavBar"> 
 <ul>
   <Link to="/Home"> Home</Link>   
@@ -39,6 +40,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
   <ul >
   <Link to="/page4"> Page4</Link>    
   </ul>
+  </div>
   <Routes>  
   <Route path='/Home' element={<index />}/>
     <Route path='/NewHeaders' element={<NewHeades />}/>
@@ -47,7 +49,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
       <Route path='/page3' element={<Page3 />}/>
       <Route path='/page4' element={<Page4 />}/>
   </Routes>
-</div>
+
 
 
 </BrowserRouter>
