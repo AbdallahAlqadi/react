@@ -1,17 +1,15 @@
   //   import React(اسم fun) from 'react'(اسم الصفحه);
-  import React from 'react';
-import ReactDOM from 'react-dom/client';
+  import React from 'react';//هاي مهمه
+import ReactDOM from 'react-dom/client';//هاي مهمه
 import './index.css';
-import App from './App';
-import NewHeades from './NewHeades';
-import reportWebVitals from './reportWebVitals';
+import App from './App'; //هاي مهمه
+import NewHeades from './NewHeades'; //هاي مهمه
+import reportWebVitals from './reportWebVitals';//هاي لا 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(    // <App />   اسم fun 
   <React.StrictMode>
     <App /> 
-   
-
   </React.StrictMode>
 );
 

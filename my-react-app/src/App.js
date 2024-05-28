@@ -9,7 +9,7 @@ const NavPage=()=>NewHeades
 function App() {
   return (
 <BrowserRouter>
-<div>
+<div> 
   <ul>
 
     <Link to="/nav">nav</Link>
