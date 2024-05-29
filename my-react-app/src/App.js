@@ -17,6 +17,7 @@ const page3=()=>Page3
 const page4=()=>Page4
 const ReportWebVitals=()=>reportWebVitals
 function App() { //جزئيه routes بتتحقق اذا كبست على NewHeaders بعرض  محتواها
+  
   return (
 <BrowserRouter>
 
@@ -30,7 +31,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
   <Link to="/page3"> Page3</Link>  
   <Link to="/page4"> Page4</Link>    
   </div>
-  
+
   <Routes>  
   <Route path='/Home' element={<index />}/>
     <Route path='/NewHeaders' element={<NewHeades />}/>
