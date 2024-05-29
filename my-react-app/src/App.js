@@ -22,27 +22,15 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
 
 <div id="NavBar"> 
 
-<ul>
-  <Link to="/Home"> Home</Link>   
- 
-  </ul>
-  <ul >  
-    <Link to="/NewHeaders"> NewHeaders</Link>   
-  </ul>
-  <ul >
-    <Link to="/page1"> Page1</Link>   
-  </ul>
-  <ul > 
-  <Link to="/page2"> Page2</Link>   
-  </ul>
-  <ul>
-  <Link to="/page3"> Page3</Link>  
-  </ul>
-  <ul >
-  <Link to="/page4"> Page4</Link>    
-  </ul>
 
+  <Link to="/Home"> Home</Link>   
+    <Link to="/NewHeaders"> NewHeaders</Link>   
+    <Link to="/page1"> Page1</Link>   
+  <Link to="/page2"> Page2</Link>   
+  <Link to="/page3"> Page3</Link>  
+  <Link to="/page4"> Page4</Link>    
   </div>
+  
   <Routes>  
   <Route path='/Home' element={<index />}/>
     <Route path='/NewHeaders' element={<NewHeades />}/>
