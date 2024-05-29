@@ -40,7 +40,7 @@
 
 #NavBar{
 display: grid;
-grid-template-columns: auto auto auto auto auto auto;
+grid-template-columns: auto auto auto auto auto auto auto;
 
 
 background-color: #71e504;

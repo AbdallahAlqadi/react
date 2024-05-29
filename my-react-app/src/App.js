@@ -3,7 +3,7 @@ import NewHeades from './Componant/NewHeades';
 import Page1 from './Componant/Page1';
 import Page2 from './Componant/Page2';
 import Page3 from './Componant/Page3';
-
+import Counter from './Componant/counter';
 import reportWebVitals from './reportWebVitals';
 import ClasssPage from './Componant/Classcomponant';
 import React from 'react';
@@ -15,7 +15,7 @@ const NavPage=()=>NewHeades  // بستدعي NewHeades
 const page1=()=>Page1
 const page2=()=>Page2
 const page3=()=>Page3
-
+const counter=()=>Counter
 const ReportWebVitals=()=>reportWebVitals
 function App() { //جزئيه routes بتتحقق اذا كبست على NewHeaders بعرض  محتواها
 
@@ -31,7 +31,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
     <Link to="/page1"> Page1</Link>   
   <Link to="/page2"> Page2</Link>   
   <Link to="/page3"> Page3</Link>  
-   
+  <Link to="/counter"> Counter</Link>  
   </div>
 
   <Routes>  
@@ -41,7 +41,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
     <Route path='/page1' element={<Page1 />}/>
     <Route path='/page2' element={<Page2 />}/>  
       <Route path='/page3' element={<Page3 />}/>
- 
+      <Route path='/counter' element={<Counter />}/>
   </Routes>
 
 
