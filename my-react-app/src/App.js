@@ -1,3 +1,4 @@
+import './style/styleapp.css'
 import {BrowserRouter,Link,Route,Routes} from'react-router-dom';
 import NewHeades from './Componant/NewHeades';
 import Page1 from './Componant/Page1';
@@ -8,7 +9,8 @@ import reportWebVitals from './reportWebVitals';
 import ClasssPage from './Componant/Classcomponant';
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+
+
 import ReactDOM from 'react-dom'
 
 const NavPage=()=>NewHeades  // بستدعي NewHeades
@@ -22,16 +24,17 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
   return (
 <BrowserRouter>
 
-<div id="NavBar"> 
+<div id="nav"> 
 
-
-  <Link to="/Home"> Home</Link>   
-    <Link to="/NewHeaders"> NewHeaders</Link>   
-    <Link to="/Class"> Class</Link>  
-    <Link to="/page1"> Page1</Link>   
-  <Link to="/page2"> Page2</Link>   
-  <Link to="/page3"> Page3</Link>  
-  <Link to="/counter"> Counter</Link>  
+<ul className='divUl'>
+  <li><Link className='navButton' to="/Home"> Home</Link>   </li>
+  <li><Link className='navButton' to="/NewHeaders"> NewHeaders</Link>   </li>
+  <li> <Link className='navButton' to="/Class"> Class</Link>  </li>
+  <li> <Link className='navButton' to="/page1"> Page1</Link>   </li>
+  <li>  <Link className='navButton' to="/page2"> Page2</Link>   </li>
+  <li><Link className='navButton' to="/page3"> Page3</Link>  </li>
+  <li><Link className='navButton' to="/counter"> Counter</Link>  </li>
+  </ul>
   </div>
 
   <Routes>  
