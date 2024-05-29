@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+// hooks > usestate
 function Counter(){
     var [count,setCount]=useState(0);
     return(
