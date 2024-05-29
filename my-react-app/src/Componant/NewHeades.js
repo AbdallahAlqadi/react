@@ -5,7 +5,8 @@ function NewHeades() {
         
   <div>
     <h1>this is a new header</h1>
-  
+    
+    
     </div>
     );
   }
