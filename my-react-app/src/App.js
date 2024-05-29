@@ -1,10 +1,11 @@
 import {BrowserRouter,Link,Route,Routes} from'react-router-dom';
-import NewHeades from './NewHeades';
-import Page1 from './Page1';
-import Page2 from './Page2';
-import Page3 from './Page3';
-import Page4 from './Page4';
+import NewHeades from './Componant/NewHeades';
+import Page1 from './Componant/Page1';
+import Page2 from './Componant/Page2';
+import Page3 from './Componant/Page3';
+
 import reportWebVitals from './reportWebVitals';
+import ClasssPage from './Componant/Classcomponant';
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -14,10 +15,10 @@ const NavPage=()=>NewHeades  // بستدعي NewHeades
 const page1=()=>Page1
 const page2=()=>Page2
 const page3=()=>Page3
-const page4=()=>Page4
+
 const ReportWebVitals=()=>reportWebVitals
 function App() { //جزئيه routes بتتحقق اذا كبست على NewHeaders بعرض  محتواها
-  
+
   return (
 <BrowserRouter>
 
@@ -26,19 +27,21 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
 
   <Link to="/Home"> Home</Link>   
     <Link to="/NewHeaders"> NewHeaders</Link>   
+    <Link to="/Class"> Class</Link>  
     <Link to="/page1"> Page1</Link>   
   <Link to="/page2"> Page2</Link>   
   <Link to="/page3"> Page3</Link>  
-  <Link to="/page4"> Page4</Link>    
+   
   </div>
 
   <Routes>  
   <Route path='/Home' element={<index />}/>
+  <Route path='/Class' element={<ClasssPage />}/>
     <Route path='/NewHeaders' element={<NewHeades />}/>
     <Route path='/page1' element={<Page1 />}/>
     <Route path='/page2' element={<Page2 />}/>  
       <Route path='/page3' element={<Page3 />}/>
-      <Route path='/page4' element={<Page4 />}/>
+ 
   </Routes>
 
 
