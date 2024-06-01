@@ -7,6 +7,7 @@ import Page3 from './Componant/Page3';
 import Counter from './Componant/counter';
 import reportWebVitals from './reportWebVitals';
 import ClasssPage from './Componant/Classcomponant';
+
 import React from 'react';
 import logo from './logo.svg';
 import ReactDOM from 'react-dom'
