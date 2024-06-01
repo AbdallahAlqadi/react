@@ -24,17 +24,16 @@ var listitems=items.map(item=>(
     ))
 
 return(
-<div>
+<div id='table'>
 
-    <table>
-
+    <table border='5'>
         <thead className='bord'>
-        <tr className='bord'>Id</tr>
-        <tr className='bord'>Name</tr>
-        <tr className='bord'>Amount</tr>
-        <tr className='bord'>spendData</tr>
-        <tr className='bord'>Category</tr>
-
+            <tr className='bord'></tr>
+        <th className='bord'>Id</th>
+        <th className='bord'>Name</th>
+        <th className='bord'>Amount</th>
+        <th className='bord'>spendData</th>
+        <th className='bord'>Category</th>
         </thead>
         <tbody className='bord'>
             {listitems}
