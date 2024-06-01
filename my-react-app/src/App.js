@@ -8,7 +8,14 @@ import Counter from './Componant/counter';
 import reportWebVitals from './reportWebVitals';
 import ClasssPage from './Componant/Classcomponant';
 
-import React from 'react';
+import React, { useState } from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
 import logo from './logo.svg';
 import ReactDOM from 'react-dom'
 
@@ -18,7 +25,10 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
   return (
 <BrowserRouter>
 
-<div id="nav"> 
+<Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+        <div id="nav"> 
 
 <ul className='divUl'>
   <li><Link className='navButton' to="/Home"> Home</Link>   </li>
@@ -30,6 +40,12 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
   <li><Link className='navButton' to="/counter"> Counter</Link>  </li>
   </ul>
   </div>
+          
+         
+          <Button color="inherit" className='login'>Login</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
 
   <Routes>  
   <Route path='/Home' element={<index />}/>
