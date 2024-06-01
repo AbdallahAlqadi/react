@@ -9,8 +9,6 @@ import reportWebVitals from './reportWebVitals';
 import ClasssPage from './Componant/Classcomponant';
 import React from 'react';
 import logo from './logo.svg';
-
-
 import ReactDOM from 'react-dom'
 
 const NavPage=()=>NewHeades  // بستدعي NewHeades
@@ -24,7 +22,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
   return (
 <BrowserRouter>
 
-<div id="nav"> 
+{/* <div id="nav"> 
 
 <ul className='divUl'>
   <li><Link className='navButton' to="/Home"> Home</Link>   </li>
@@ -35,7 +33,16 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
   <li><Link className='navButton' to="/page3"> Page3</Link>  </li>
   <li><Link className='navButton' to="/counter"> Counter</Link>  </li>
   </ul>
-  </div>
+  </div> */}
+
+
+
+
+
+
+
+
+
 
   <Routes>  
   <Route path='/Home' element={<index />}/>
