@@ -22,6 +22,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Container,Grid } from '@mui/material';
+import Table from './Componant/table';
+
 
 
 function App() { //جزئيه routes بتتحقق اذا كبست على NewHeaders بعرض  محتواها
@@ -49,6 +51,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
   <li>  <Link className='navButton' to="/page2"> Page2</Link>   </li>
   <li><Link className='navButton' to="/page3"> Page3</Link>  </li>
   <li><Link className='navButton' to="/counter"> Counter</Link>  </li>
+  <li><Link className='navButton' to="/table"> Table</Link>  </li>
   </ul>
   </div>
           
@@ -66,6 +69,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
     <Route path='/page2' element={<Page2 />}/>  
       <Route path='/page3' element={<Page3 />}/>
       <Route path='/counter' element={<Counter />}/>
+      <Route path='/table' element={<Table />}/>
   </Routes>
 
 <div className='footer'>
