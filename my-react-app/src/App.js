@@ -82,7 +82,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
         <Grid container spacing={2} justifyContent="space-between">
           <Grid item xs={12} sm={6} md={3}>
             <Typography id="text" variant="h6" color="text.primary" gutterBottom>
-              Brand Name
+             AK
             </Typography>
             {/* Add your logo component or image here */}
           </Grid>
