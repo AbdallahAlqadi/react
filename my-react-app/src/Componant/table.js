@@ -19,9 +19,9 @@ const navigate=useNavigate();
 
 var SeeDeatels= (item)=>{
     console.log(item)
-    var quary=new URLSearchParams(item)  //برفع المعلومات
-    console.log(quary)
-   // navigate('/details')
+    var query=new URLSearchParams(item).toString()  //برفع المعلومات
+    console.log(query)
+    navigate('/details?{query}')
 }
 
 var listitems=items.map(item=>(   //زي for loop
