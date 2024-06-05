@@ -33,7 +33,7 @@ fetchData(){
 
 renderTable(tableData){
     return(
-        <table border='3'>
+        <table border='1'>
 
 
 <thead>
