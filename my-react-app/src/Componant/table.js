@@ -11,7 +11,7 @@ var items=[
 
 ]
 
-var listitems=items.map(item=>(
+var listitems=items.map(item=>(   //زي for loop
 
     <tr className='bord'>
 <td className='bord'>{item.id}</td>
