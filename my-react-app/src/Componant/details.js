@@ -14,6 +14,8 @@ return(
     }}
     >Back</button>
    <h1>This is Details</h1>
+  
+   <h1>{query.get('name')}</h1>
 
 
    </div>
