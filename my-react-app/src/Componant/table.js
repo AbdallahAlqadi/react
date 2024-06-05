@@ -28,7 +28,6 @@ return(
 
     <table  className='table1' border='5' >
         <thead className='bord'>
-            <tr className='bord'></tr>
         <th className='bord'>Id</th>
         <th className='bord'>Name</th>
         <th className='bord'>Amount</th>
