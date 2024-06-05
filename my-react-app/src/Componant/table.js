@@ -21,7 +21,7 @@ var SeeDeatels= (item)=>{
     console.log(item)
     var query=new URLSearchParams(item).toString()  //برفع المعلومات
     console.log(query)
-    navigate('/details?${query}') 
+    navigate('/details?${query}');
 }
 
 var listitems=items.map(item=>(   //زي for loop
