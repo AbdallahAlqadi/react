@@ -3,16 +3,16 @@ import '../style/table.css'
 function Table(){
 var items=[
 
-{id:'1',name:'name1',amount:'100',spendData:'2024-2-1',catrgory:'category1'},
-{id:'2',name:'name2',amount:'200',spendData:'2024-2-1',catrgory:'category2'},
-{id:'3',name:'name3',amount:'300',spendData:'2024-2-1',catrgory:'category3'},
-{id:'4',name:'name4',amount:'400',spendData:'2024-2-1',catrgory:'category4'},
-{id:'5',name:'name5',amount:'500',spendData:'2024-2-1',catrgory:'category5'}
+{id:'1',name:'Ahmad',amount:'100',spendData:'2024-2-1',catrgory:'category1'},
+{id:'2',name:'Abdallah',amount:'200',spendData:'2024-2-1',catrgory:'category2'},
+{id:'3',name:'Esa',amount:'300',spendData:'2024-2-1',catrgory:'category3'},
+{id:'4',name:'Kamal',amount:'400',spendData:'2024-2-1',catrgory:'category4'},
+{id:'5',name:'Saleh',amount:'500',spendData:'2024-2-1',catrgory:'category5'}
 
 ]
 
 var listitems=items.map(item=>(   //زي for loop
-
+//map فقط بتعامل مع object
     <tr className='bord'>
 <td className='bord'>{item.id}</td>
 <td className='bord'>{item.name}</td>
