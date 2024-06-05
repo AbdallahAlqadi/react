@@ -1,8 +1,9 @@
 import '../style/table.css'
 
+
+
 function Table(){
 var items=[
-
 {id:'1',name:'Ahmad',amount:'100',spendData:'2024-2-1',catrgory:'category1'},
 {id:'2',name:'Abdallah',amount:'200',spendData:'2024-2-1',catrgory:'category2'},
 {id:'3',name:'Esa',amount:'300',spendData:'2024-2-1',catrgory:'category3'},
