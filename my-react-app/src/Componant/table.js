@@ -17,11 +17,11 @@ var items=[
 //هاي الجزئيه يلي بتنقلنا من صفحه لاخرى
 const navigate=useNavigate();
 
-var SeeDeatels= (item)=>{
+function SeeDeatels(item){
     console.log(item)
     var query=new URLSearchParams(item).toString()  //برفع المعلومات
     console.log(query)
-    navigate('/details?${query}');
+    navigate(`/details?${query}`);
 }
 
 var listitems=items.map(item=>(   //زي for loop
