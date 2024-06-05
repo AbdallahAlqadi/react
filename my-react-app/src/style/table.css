@@ -1,27 +1,40 @@
-#table{
+#table {
     display: grid;
-    margin-top: 70px;
-}
-.table1 {
-    border-color: #90EE90; 
-    font-family: Arial, sans-serif; 
-    font-size: 20px;
+    margin-top: 70px; /* Maintain spacing from previous content */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible column widths */
+    grid-gap: 20px; /* Spacing between cells */
+    background-size: cover; /* Ensure image fills the entire grid */
+    width: 1450px;
+    margin-left: 35px;
+    margin-top: 100px;
+  }
+  
+  .table1 {
+    border-color: #678ef9; /* Light pink border */
+    font-family: 'Dancing Script', cursive; /* Elegant cursive font */
+    font-size: 18px; /* Slightly smaller font for readability */
     border-collapse: collapse;
-    margin: 20px; 
-    padding: 10px; 
+    margin: 0; /* Remove default margin for a cleaner look */
+    padding: 15px; /* Increase padding for a more spacious feel */
+    border-radius: 10px; /* Gentle rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
   }
   
   .table1 th {
-    background-color: #E0F0F0; 
-    color: #333; 
-    font-weight: bolder;
-    text-align: center; 
-    border-bottom: 2px solid #90EE90;
+    background-color: #eff3fadd; /* Light peach background */
+    color: #5575ea; /* Soft pink text */
+    font-weight: normal; /* Remove bold weight for a gentler look */
+    text-align: center;
+    border-bottom: none; /* Remove bottom border for seamless transition */
+    padding: 10px 0; /* Adjust padding for a balanced look */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Delicate text shadow */
   }
   
   .table1 td {
-    border-bottom: 1px solid #DDD; 
-    padding: 8px; 
-    text-align: left; 
+    border-bottom: 1px dashed #558be9; /* Dashed light pink border */
+    padding: 8px;
+    text-align: left;
+    color: #0a0b0c; /* Soft brown text */
   }
+  
   
