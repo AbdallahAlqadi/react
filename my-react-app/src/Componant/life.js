@@ -24,11 +24,40 @@ class LifecycleDemo extends Component{
 fetchData(){
     setTimeout(()=>{
         this.setState({
-            data:'this is Data',
+            data:[{id:1,name:'ahmad'},{id:2,name:'esa'},{id:3,name:'abdallah'}],
             loading:false
         });
         console.log('it fitch the Data')
     },2000)
+}
+
+renderTable(tableData){
+    return(
+        <table border='3'>
+
+
+<thead>
+
+    <tr>
+<th>id</th>
+<th>name</th>
+    </tr>
+</thead>
+<tbody>
+
+    {
+        tableData.map(item=>(
+<tr>
+<td>{item.id}</td>
+<td>{item.name}</td>
+</tr>
+
+        ))
+    }
+</tbody>
+
+        </table>
+    )
 }
 
 render(){
@@ -36,7 +65,7 @@ render(){
     const {data,loading}=this.state;
     return(
         <>
-        {loading ? <h1>loading....</h1>:<h1>{data}</h1>}
+        {loading ? <h1>loading....</h1>:<h1>{this.renderTable(data)}</h1>}
         </>
     )
    
