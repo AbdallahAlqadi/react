@@ -24,6 +24,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import { Container,Grid } from '@mui/material';
 import Table from './Componant/table';
 import Deatels from './Componant/details';
+import LifecycleDemo from './Componant/life';
+
 
 
 
@@ -53,6 +55,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
   <li><Link className='navButton' to="/page3"> Page3</Link>  </li>
   <li><Link className='navButton' to="/counter"> Counter</Link>  </li>
   <li><Link className='navButton' to="/table"> Table</Link>  </li>
+  <li><Link className='navButton' to="/life"> Life</Link>  </li>
   </ul>
   </div>
           
@@ -72,6 +75,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
       <Route path='/counter' element={<Counter />}/>
       <Route path='/table' element={<Table />}/>
       <Route path='/details' element={<Deatels />}/>
+      <Route path='/life' element={<LifecycleDemo />}/>
   </Routes>
 
 <div className='footer'>
