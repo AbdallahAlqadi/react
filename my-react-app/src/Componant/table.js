@@ -26,7 +26,7 @@ var listitems=items.map(item=>(
 return(
 <div id='table'>
 
-    <table border='5'>
+    <table  className='table1' border='5' >
         <thead className='bord'>
             <tr className='bord'></tr>
         <th className='bord'>Id</th>

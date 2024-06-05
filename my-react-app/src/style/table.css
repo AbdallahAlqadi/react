@@ -2,3 +2,26 @@
     display: grid;
     margin-top: 70px;
 }
+.table1 {
+    border-color: #90EE90; 
+    font-family: Arial, sans-serif; 
+    font-size: 20px;
+    border-collapse: collapse;
+    margin: 20px; 
+    padding: 10px; 
+  }
+  
+  .table1 th {
+    background-color: #E0F0F0; 
+    color: #333; 
+    font-weight: bolder;
+    text-align: center; 
+    border-bottom: 2px solid #90EE90;
+  }
+  
+  .table1 td {
+    border-bottom: 1px solid #DDD; 
+    padding: 8px; 
+    text-align: left; 
+  }
+  
