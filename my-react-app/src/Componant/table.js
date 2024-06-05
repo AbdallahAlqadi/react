@@ -1,8 +1,10 @@
+import {useNavigate} from 'react-router-dom'
 import '../style/table.css'
 
 
 
 function Table(){
+    //Json
 var items=[
 {id:'1',name:'Ahmad',amount:'100',spendData:'2024-2-1',catrgory:'category1'},
 {id:'2',name:'Abdallah',amount:'200',spendData:'2024-2-1',catrgory:'category2'},
@@ -12,6 +14,16 @@ var items=[
 
 ]
 
+//هاي الجزئيه يلي بتنقلنا من صفحه لاخرى
+const navigate=useNavigate();
+
+var SeeDeatels= (item)=>{
+    console.log(item)
+    var quary=new URLSearchParams(item)  //برفع المعلومات
+    console.log(quary)
+   // navigate('/details')
+}
+
 var listitems=items.map(item=>(   //زي for loop
 //map فقط بتعامل مع object
     <tr className='bord'>
@@ -20,6 +32,7 @@ var listitems=items.map(item=>(   //زي for loop
 <td className='bord'>{item.amount}</td>
 <td className='bord'>{item.spendData}</td>
 <td className='bord'>{item.catrgory}</td>
+<td className='bord'><button className='button' onClick={()=>{SeeDeatels(item)}}>More-Info</button></td>
 
         </tr>
     ))
@@ -34,6 +47,7 @@ return(
         <th className='bord'>Amount</th>
         <th className='bord'>spendData</th>
         <th className='bord'>Category</th>
+        <th className='bord'>More-Info</th>
         </thead>
         <tbody className='bord'>
             {listitems}

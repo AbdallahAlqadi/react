@@ -23,6 +23,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Container,Grid } from '@mui/material';
 import Table from './Componant/table';
+import Deatels from './Componant/details';
 
 
 
@@ -70,6 +71,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
       <Route path='/page3' element={<Page3 />}/>
       <Route path='/counter' element={<Counter />}/>
       <Route path='/table' element={<Table />}/>
+      <Route path='/details' element={<Deatels />}/>
   </Routes>
 
 <div className='footer'>
