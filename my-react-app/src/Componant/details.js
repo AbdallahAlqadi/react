@@ -1,3 +1,4 @@
+import '../style/details.css'
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom"; //بتستقبل القيم
 
@@ -14,10 +15,13 @@ return(
     }}
     >Back</button>
    <h1>This is Details</h1>
-  
-   <h1>{query.get('name')}</h1>
-   <h1>{query.get('id')}</h1>
-
+  <div className="card">
+   <h1>Id: {query.get('name')}</h1>
+   <h1>Name: {query.get('id')}</h1>
+   <h1>Amount: {query.get('amount')}</h1>
+   <h1>spendData: {query.get('spendData')}</h1>
+   <h1>Category: {query.get('catrgory')}</h1>
+   </div>
    </div>
 )
 } 

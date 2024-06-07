@@ -1,0 +1,10 @@
+.card{
+    background-color: rgba(42, 130, 246, 0.791);
+    width: 500px;
+height: 350px;
+margin-left: 400px;
+text-align: center;
+border-radius: 20px;
+padding-top: 5px;
+color: aliceblue;
+}
