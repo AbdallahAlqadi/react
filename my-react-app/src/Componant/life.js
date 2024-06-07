@@ -2,7 +2,7 @@ import React,{Component} from "react";
 
 class LifecycleDemo extends Component{
 
-    constructor(props){
+    constructor(props){ //اول
         super(props);
         this.state={
 
@@ -12,8 +12,8 @@ class LifecycleDemo extends Component{
         console.log('Constructor');
     }
 
-    componentWillMount(){
-        console.log('componentWillMount');
+    componentWillMount(){ //ثاني
+        console.log('componentWillMount'); 
     }
 
     componentDidMount(){
@@ -60,7 +60,7 @@ renderTable(tableData){
     )
 }
 
-render(){
+render(){ //ثالث
     console.log('render')
     const {data,loading}=this.state;
     return(

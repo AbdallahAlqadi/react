@@ -16,7 +16,7 @@ return(
    <h1>This is Details</h1>
   
    <h1>{query.get('name')}</h1>
-
+   <h1>{query.get('id')}</h1>
 
    </div>
 )

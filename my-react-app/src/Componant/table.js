@@ -17,7 +17,7 @@ var items=[
 //هاي الجزئيه يلي بتنقلنا من صفحه لاخرى
 const navigate=useNavigate();
 
-function SeeDeatels(item){
+function SeeDeatels(item){ //وظيفته ينقلني لصفحه ااخرى ويبعت
     console.log(item)
     var query=new URLSearchParams(item).toString()  //برفع المعلومات
     console.log(query)
@@ -32,7 +32,7 @@ var listitems=items.map(item=>(   //زي for loop
 <td className='bord'>{item.amount}</td>
 <td className='bord'>{item.spendData}</td>
 <td className='bord'>{item.catrgory}</td>
-<td className='bord'><button className='button' onClick={()=>{SeeDeatels(item)}}>More-Info</button></td>
+<td className='bord'><button className='button' onClick={()=>SeeDeatels(item)}>More-Info</button></td>
 
         </tr>
     ))
