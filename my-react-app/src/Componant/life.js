@@ -28,12 +28,12 @@ fetchData(){
             loading:false
         });
         console.log('it fitch the Data')
-    },2000)
+    },1000)
 }
 
 renderTable(tableData){
     return(
-        <table border='1'>
+        <table border='2'>
 
 
 <thead>
