@@ -19,7 +19,7 @@ const navigate=useNavigate();
 
 function SeeDeatels(item){ //وظيفته ينقلني لصفحه ااخرى ويبعت
     console.log(item)
-    var query=new URLSearchParams(item).toString()  //برفع المعلومات
+    var query=new URLSearchParams(item)  //برفع المعلومات
     console.log(query)
     navigate(`/details?${query}`);
 }
