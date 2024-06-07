@@ -1,4 +1,7 @@
+import '../style/class.css'
 import React from "react";
+import { Card } from "@mui/material";
+
 
 class ClasssPage extends React.Component{
     render(){
@@ -6,7 +9,10 @@ class ClasssPage extends React.Component{
 
    <>
 <h1>This is Class Componant.</h1>
+<div className="card">
+<Card>Name: Abdallah Khaled</Card>
 
+</div>
    </>
 
         )

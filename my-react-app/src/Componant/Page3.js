@@ -7,7 +7,7 @@ function Page3() {
       
   <div>
 
-    <h1>this is a Page3 {value}</h1>
+    <h1>this is a Page3 ({value})</h1>
   <Button variant="contained" onClick={()=>Setvalue(value+=3)}>click</Button>
     </div>
     );

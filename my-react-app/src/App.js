@@ -2,7 +2,7 @@ import './style/styleapp.css'
 import {BrowserRouter,Link,Route,Routes} from'react-router-dom';
 import NewHeades from './Componant/NewHeades';
 import Page1 from './Componant/Page1';
-import Page2 from './Componant/Page2';
+import Page2 from './Componant/ExpandMoreProps';
 import Page3 from './Componant/Page3';
 import Counter from './Componant/counter';
 import reportWebVitals from './reportWebVitals';
@@ -51,7 +51,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
   <li><Link className='navButton' to="/NewHeaders"> NewHeaders</Link>   </li>
   <li> <Link className='navButton' to="/Class"> Class</Link>  </li>
   <li> <Link className='navButton' to="/page1"> Page1</Link>   </li>
-  <li>  <Link className='navButton' to="/page2"> Page2</Link>   </li>
+  <li>  <Link className='navButton' to="/page2"> ExpandMoreProps</Link>   </li>
   <li><Link className='navButton' to="/page3"> Page3</Link>  </li>
   <li><Link className='navButton' to="/counter"> Counter</Link>  </li>
   <li><Link className='navButton' to="/table"> Table</Link>  </li>
