@@ -1,4 +1,5 @@
 import {useNavigate} from 'react-router-dom'
+import Button from '@mui/material/Button';
 import '../style/table.css'
 
 
@@ -32,7 +33,7 @@ var listitems=items.map(item=>(   //زي for loop
 <td className='bord'>{item.amount}</td>
 <td className='bord'>{item.spendData}</td>
 <td className='bord'>{item.catrgory}</td>
-<td className='bord'><button className='button' onClick={()=>SeeDeatels(item)}>More-Info</button></td>
+<td className='bord'><Button variant="contained" className='button' onClick={()=>SeeDeatels(item)}>More-Info</Button></td>
 
         </tr>
     ))
