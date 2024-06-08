@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-
+import '../style/life.css'
 class LifecycleDemo extends Component{
 
     constructor(props){
@@ -21,9 +21,9 @@ class LifecycleDemo extends Component{
     }
 
 fetchData(){
-    setTimeout(()=>{
+    setTimeout(()=>{   //على constructor بعدل
         this.setState({
-            data:[{id:1,name:'ahmad'},{id:2,name:'esa'},{id:3,name:'abdallah'}],
+            data:[{id:1,name:'ahmad',age:10},{id:2,name:'esa',age:20},{id:3,name:'abdallah',age:30}],
             loading:false
         });
         console.log('it fitch the Data')
@@ -32,30 +32,16 @@ fetchData(){
 
 renderTable(tableData){
     return(
-        <table border='2'>
-
-
-<thead>
-
-    <tr>
-<th>id</th>
-<th>name</th>
-    </tr>
-</thead>
-<tbody>
-
-    {
         tableData.map(item=>(
-<tr>
-<td>{item.id}</td>
-<td>{item.name}</td>
-</tr>
-
+         
+            <div className="grid">
+        <h5>Id: {item.id}</h5>
+        <h5>Name: {item.name}</h5>
+        <h5>Age: {item.age}</h5>
+        </div>
+    
         ))
-    }
-</tbody>
-
-        </table>
+      
     )
 }
 
