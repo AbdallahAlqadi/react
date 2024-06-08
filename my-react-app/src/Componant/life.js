@@ -37,11 +37,11 @@ renderTable(tableData){
         tableData.map(item=>(
          
             <div className="grid">
-        <h5>Id: {item.id}</h5>
-        <h5>Name: {item.fname}</h5>
-        <h5>Name: {item.lname}</h5>
-        <h5>Age: {item.age}</h5>
-        <h5>Gender: {item.gender}</h5>
+        <h5 id="item">Id: {item.id}</h5>
+        <h5 id="item">Name: {item.fname}</h5>
+        <h5 id="item">Name: {item.lname}</h5>
+        <h5 id="item">Age: {item.age}</h5>
+        <h5 id="item">Gender: {item.gender}</h5>
    
         </div>
       
