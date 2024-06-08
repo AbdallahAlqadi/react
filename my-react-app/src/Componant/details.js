@@ -15,8 +15,13 @@ return(
     navigate('/table')
     }}
     >Back</button>
-   <h1>This is Details</h1>
-  <div className="card">
+    <div>
+        {item ?(
+
+            <>
+               <h1>This is Details</h1>
+
+            <div className="card">
    <h1>Id: {item.id}</h1>
    <h1>Name: {item.name}</h1>
    <h1>Amount: {item.amount}</h1>
@@ -25,6 +30,11 @@ return(
    <h1>Category: {item.catrgory}</h1>
 
    </div>
+            
+            </>
+        ):(<>there is no data</>)}
+    </div>
+  
    </div>
 )
 } 
