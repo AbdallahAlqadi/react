@@ -20,7 +20,9 @@ return(
    <h1>Name: {item.name}</h1>
    <h1>Amount: {item.amount}</h1>
    <h1>spendData: {item.spendData}</h1>
+
    <h1>Category: {item.catrgory}</h1>
+
    </div>
    </div>
 )

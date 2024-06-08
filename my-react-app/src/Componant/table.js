@@ -32,6 +32,7 @@ var listitems=items.map(item=>(   //زي for loop
 <td className='bord'>{item.amount}</td>
 <td className='bord'>{item.spendData}</td>
 <td className='bord'>{item.catrgory}</td>
+
 <td className='bord'><Button variant="contained" onClick={()=>SeeDeatels(item)}>More-Info</Button></td>
 
         </tr>
