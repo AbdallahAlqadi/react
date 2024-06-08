@@ -21,7 +21,7 @@ function SeeDeatels(item){ //وظيفته ينقلني لصفحه ااخرى و�
     console.log(item)
     var query=new URLSearchParams(item)  //برفع المعلومات
     console.log(query)
-    navigate(`/details?${query}`);
+    navigate(`/details`,{state:item});
 }
 
 var listitems=items.map(item=>(   //زي for loop
@@ -32,7 +32,7 @@ var listitems=items.map(item=>(   //زي for loop
 <td className='bord'>{item.amount}</td>
 <td className='bord'>{item.spendData}</td>
 <td className='bord'>{item.catrgory}</td>
-<td className='bord'><Button variant="contained" className='button' onClick={()=>SeeDeatels(item)}>More-Info</Button></td>
+<td className='bord'><Button variant="contained" onClick={()=>SeeDeatels(item)}>More-Info</Button></td>
 
         </tr>
     ))
