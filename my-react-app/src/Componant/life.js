@@ -31,6 +31,7 @@ fetchData(){
 }
 
 renderTable(tableData){
+
     return(
        
         tableData.map(item=>(
@@ -41,12 +42,13 @@ renderTable(tableData){
         <h5>Name: {item.lname}</h5>
         <h5>Age: {item.age}</h5>
         <h5>Gender: {item.gender}</h5>
-
+   
         </div>
-    
+      
         ))
       
     )
+    
 }
 
 render(){ //ثالث
@@ -54,7 +56,7 @@ render(){ //ثالث
     const {data,loading}=this.state;
     return(
         <>
-        {loading ? <h1>loading....</h1>:<h1>{this.renderTable(data)}</h1>}
+        {loading ? <h1>loading....</h1>:<h1 id="gridall">{this.renderTable(data)}</h1>}
         </>
     )
    

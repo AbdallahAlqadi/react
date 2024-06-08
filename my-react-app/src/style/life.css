@@ -10,3 +10,9 @@
     border-radius: 20px;
     color: white;
 }
+
+#gridall{
+    display: grid;
+    grid-template-columns: auto auto auto;
+   margin-left: -40px;
+}
