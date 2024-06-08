@@ -14,7 +14,6 @@ var items=[
 {id:'5',name:'Saleh',amount:'500',spendData:'2024-2-1',catrgory:'category5'}
 
 ]
-
 //هاي الجزئيه يلي بتنقلنا من صفحه لاخرى
 const navigate=useNavigate();
 

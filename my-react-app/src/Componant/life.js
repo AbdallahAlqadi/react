@@ -2,14 +2,13 @@ import React,{Component} from "react";
 
 class LifecycleDemo extends Component{
 
-    constructor(props){ //اول
+    constructor(props){
         super(props);
         this.state={
 
-        data:null,
-        loading:true
+            data:null,
+           loading:true
         }
-        console.log('Constructor');
     }
 
     componentWillMount(){ //ثاني

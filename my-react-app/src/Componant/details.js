@@ -10,7 +10,7 @@ function  Deatels(){
 return(
 
 <div>
-<button onClick={()=>{
+<button onClick={()=>{  // بدل ما انشا function هاي بديل اسهل
     navigate('/table')
     }}
     >Back</button>
