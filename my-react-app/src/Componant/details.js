@@ -1,4 +1,5 @@
 import '../style/details.css'
+
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom"; //بتستقبل القيم
 
@@ -27,4 +28,9 @@ return(
    </div>
 )
 } 
+
+
+
+
+
 export default Deatels;
