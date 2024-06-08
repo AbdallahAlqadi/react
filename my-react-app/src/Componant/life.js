@@ -23,7 +23,7 @@ class LifecycleDemo extends Component{
 fetchData(){
     setTimeout(()=>{   //على constructor بعدل
         this.setState({
-            data:[{id:1,name:'ahmad',age:10},{id:2,name:'esa',age:20},{id:3,name:'abdallah',age:30}],
+            data:[{id:1,name:'ahmad',age:10,gender:'Male'},{id:2,name:'esa',age:20,gender:'Male'},{id:3,name:'abdallah',age:30,gender:'Male'}],
             loading:false
         });
         console.log('it fitch the Data')
@@ -32,12 +32,15 @@ fetchData(){
 
 renderTable(tableData){
     return(
+       
         tableData.map(item=>(
          
             <div className="grid">
         <h5>Id: {item.id}</h5>
         <h5>Name: {item.name}</h5>
         <h5>Age: {item.age}</h5>
+        <h5>Gender: {item.gender}</h5>
+
         </div>
     
         ))
