@@ -16,7 +16,7 @@ return(
     }}
     >Back</button>
     <div>
-        {item ?(
+        {item ?(  // شرط انه بحال ما في بيانات يطبع This is Details
 
             <>
                <h1>This is Details</h1>
