@@ -23,11 +23,18 @@ function Table() {
     navigate(`/details`, { state: item });
   }
 
+//Delete
   function DeleteItem(id) {  
-      const updatedItems = items.filter((item) => item.id !== id);
-      setItems(updatedItems); 
+      const deleteItems = items.filter((item) => item.id !== id);
+      setItems(deleteItems); 
     
   }
+
+  //Update
+  function UpdateItem(id) {  
+   
+}
+
 
   const listItems = items.map((item) => (
     <tr key={item.id} className="bord">
