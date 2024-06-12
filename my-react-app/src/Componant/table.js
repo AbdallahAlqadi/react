@@ -23,18 +23,28 @@ function Table() {
     navigate(`/details`, { state: item });
   }
 
-//Delete
+  // Delete
   function DeleteItem(id) {  
-      const deleteItems = items.filter((item) => item.id !== id);
-      setItems(deleteItems); 
-    
+    const deleteItems = items.filter((item) => item.id !== id);
+    setItems(deleteItems); 
   }
 
-  //Update
-  function UpdateItem(id) {  
+ 
+  function UpdateItem(id) {
    
-}
+  }
 
+  // Add
+  function AddItem() {
+    const newItem = {
+      id: (items.length + 1).toString(),
+      name: 'Abdallah',
+      amount: '0',
+      spendData: '2024-2-1',
+      category: 'AA'
+    };
+    setItems([...items, newItem]);
+  }
 
   const listItems = items.map((item) => (
     <tr key={item.id} className="bord">
@@ -43,13 +53,16 @@ function Table() {
       <td className="bord">{item.amount}</td>
       <td className="bord">{item.spendData}</td>
       <td className="bord">{item.category}</td>
+      
       <td className="bord">
         <Button variant="contained" onClick={() => SeeDetails(item)}>
           More Info
         </Button>
       </td>
       <td className="bord">
-        <Button variant="contained">Update</Button>
+        <Button variant="contained" onClick={() => UpdateItem(item.id)}>
+          Update
+        </Button>
       </td>
       <td className="bord">
         <Button variant="contained" onClick={() => DeleteItem(item.id)}>
@@ -60,22 +73,27 @@ function Table() {
   ));
 
   return (
-    <div id="table">
-      <table className="table1" border="5">
+    <div>
+      <table className="table" border="5">
         <thead className="bord">
-          <th className="bord">Id</th>
-          <th className="bord">Name</th>
-          <th className="bord">Amount</th>
-          <th className="bord">spendData</th>
-          <th className="bord">Category</th>
-          <th className="bord">More Info</th>
-          <th className="bord">Update</th>
-          <th className="bord">Delete</th>
+          <tr>
+            <th className="bord">Id</th>
+            <th className="bord">Name</th>
+            <th className="bord">Amount</th>
+            <th className="bord">Spend Date</th>
+            <th className="bord">Category</th>
+            <th className="bord">More Info</th>
+            <th className="bord">Update</th>
+            <th className="bord">Delete</th>
+          </tr>
         </thead>
         <tbody className="bord">
           {listItems}
         </tbody>
       </table>
+      <Button variant="contained" onClick={AddItem}>
+        Add
+      </Button>
     </div>
   );
 }
