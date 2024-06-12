@@ -5,15 +5,16 @@ import { useState } from 'react';
 
 function Table() {
   // JSON data (corrected variable name)
-  const itemsData = [
+  var [items,setItems]=useState([
+  
     { id: '1', name: 'Ahmad', amount: '100', spendData: '2024-2-1', category: 'category1' },
     { id: '2', name: 'Abdallah', amount: '200', spendData: '2024-2-1', category: 'category2' },
     { id: '3', name: 'Esa', amount: '300', spendData: '2024-2-1', category: 'category3' },
     { id: '4', name: 'Kamal', amount: '400', spendData: '2024-2-1', category: 'category4' },
     { id: '5', name: 'Saleh', amount: '500', spendData: '2024-2-1', category: 'category5' },
-  ];
+   ])
 
-  const [items, setItems] = useState(itemsData); // Initialize state with data
+  // const [items, setItems] = useState(itemsData); // Initialize state with data
   const navigate = useNavigate();
 
   function SeeDetails(item) {
@@ -36,38 +37,18 @@ function Table() {
 
 
   // Add
+
+
   function AddItem() {
-    var th1= document.createElement('td');
-th1.className = 'th1';
-th1.innerHTML='111';
-
-var th2= document.createElement('td');
-th2.className = 'th2';
-th2.innerHTML='222';
-
-var th3= document.createElement('td');
-th3.className = 'th3';
-th3.innerHTML='333';
-
-var th4= document.createElement('td');
-th4.className = 'th4';
-th4.innerHTML='444';
-
-var th5= document.createElement('td');
-th5.className = 'th5';
-th5.innerHTML='555';
-
-var tr1= document.createElement('tr');
-tr1.className = 'tr1';
-tr1.append(th1)
-tr1.append(th2)
-tr1.append(th3)
-tr1.append(th4)
-tr1.append(th5)
-
-var bord= document.getElementsByClassName('bord')[0];
-
-bord.append(tr1) 
+    var Id=document.getElementById('id').value;
+    var Name=document.getElementById('name').value;
+    var Amountt=document.getElementById('amount').value;
+    var spendD=document.getElementById('spenddate').value;
+    var Categ=document.getElementById('category').value;
+  
+   var newitem={id: Id, name: Name, amount: Amountt, spendData: spendD, category: Categ} ;
+items.push(newitem)
+setItems([...items])
 
   }
 
