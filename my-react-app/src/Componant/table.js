@@ -56,7 +56,6 @@ var th5= document.createElement('th');
 th5.className = 'th5';
 th5='555';
 
-
 var tr1= document.createElement('tr');
 tr1.className = 'tr1';
 tr1.append(th1)
@@ -66,7 +65,6 @@ tr1.append(th4)
 tr1.append(th5)
 
 
-listItems.append(tr1)
 
   }
 
@@ -113,6 +111,7 @@ listItems.append(tr1)
         </thead>
         <tbody className="bord">
           {listItems}
+       
         </tbody>
       </table>
       <Button variant="contained" onClick={AddItem}>
