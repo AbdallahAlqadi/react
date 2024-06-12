@@ -36,14 +36,38 @@ function Table() {
 
   // Add
   function AddItem() {
-    const newItem = {
-      id: (items.length + 1).toString(),
-      name: 'Abdallah',
-      amount: '0',
-      spendData: '2024-2-1',
-      category: 'AA'
-    };
-    setItems([...items, newItem]);
+    var th1= document.createElement('th');
+th1.className = 'th1';
+th1='111';
+
+var th2= document.createElement('th');
+th2.className = 'th2';
+th2='222';
+
+var th3= document.createElement('th');
+th3.className = 'th3';
+th3='333';
+
+var th4= document.createElement('th');
+th4.className = 'th4';
+th4='444';
+
+var th5= document.createElement('th');
+th5.className = 'th5';
+th5='555';
+
+
+var tr1= document.createElement('tr');
+tr1.className = 'tr1';
+tr1.append(th1)
+tr1.append(th2)
+tr1.append(th3)
+tr1.append(th4)
+tr1.append(th5)
+
+
+listItems.append(tr1)
+
   }
 
   const listItems = items.map((item) => (
