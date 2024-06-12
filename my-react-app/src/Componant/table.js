@@ -74,7 +74,7 @@ function Table() {
 
   return (
     <div>
-      <table className="table" border="5">
+      <table className="table1" border="5">
         <thead className="bord">
           <tr>
             <th className="bord">Id</th>
