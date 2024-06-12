@@ -29,7 +29,7 @@ function Table() {
     setItems(deleteItems); 
   }
 
- 
+ //update
   function UpdateItem(id) {
    
   }
@@ -120,6 +120,7 @@ listItems.append(tr1)
       </Button>
 
       <form  className='form'>
+      <h1 id='text'>Information</h1>
 <input id='id' type='text' placeholder='Id'></input>
 <input id='name' type='text' placeholder='Name'></input>
 <input id='amount' type='text' placeholder='Amount'></input>
