@@ -31,8 +31,38 @@ function Table() {
   }
 
  //update
-  function UpdateItem(id) {
-   
+ 
+
+  function UpdateItem(index) {
+    var Id=document.getElementById('id');
+    var Name=document.getElementById('name');
+    var Amountt=document.getElementById('amount');
+    var spendD=document.getElementById('spenddate');
+    var Categ=document.getElementById('category');
+    console.log(Id)
+    if(Id.value==''){
+      Id.value=items[index].id
+      Name.value=items[index].name
+     Amountt.value=items[index].amount
+      spendD.value=items[index].spendData
+      Categ.value=items[index].category
+    }else{
+      items[index].id=Id.value;
+      items[index].name=Name.value;
+      items[index].amount=Amountt.value;
+      items[index].spendData=spendD.value;
+      items[index].category=Categ.value;
+      console.log(Id.value)
+      setItems([...items])
+    }
+
+
+
+
+    
+
+
+
   }
 
 
@@ -66,7 +96,7 @@ setItems([...items])
         </Button>
       </td>
       <td className="bord">
-        <Button variant="contained" onClick={() => UpdateItem(item.id)}>
+        <Button variant="contained" onClick={() => UpdateItem(items.indexOf(item))}>
           Update
         </Button>
       </td>
