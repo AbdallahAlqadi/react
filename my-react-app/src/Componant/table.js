@@ -34,27 +34,28 @@ function Table() {
    
   }
 
+
   // Add
   function AddItem() {
-    var th1= document.createElement('th');
+    var th1= document.createElement('td');
 th1.className = 'th1';
-th1='111';
+th1.innerHTML='111';
 
-var th2= document.createElement('th');
+var th2= document.createElement('td');
 th2.className = 'th2';
-th2='222';
+th2.innerHTML='222';
 
-var th3= document.createElement('th');
+var th3= document.createElement('td');
 th3.className = 'th3';
-th3='333';
+th3.innerHTML='333';
 
-var th4= document.createElement('th');
+var th4= document.createElement('td');
 th4.className = 'th4';
-th4='444';
+th4.innerHTML='444';
 
-var th5= document.createElement('th');
+var th5= document.createElement('td');
 th5.className = 'th5';
-th5='555';
+th5.innerHTML='555';
 
 var tr1= document.createElement('tr');
 tr1.className = 'tr1';
@@ -64,7 +65,9 @@ tr1.append(th3)
 tr1.append(th4)
 tr1.append(th5)
 
+var bord= document.getElementsByClassName('bord')[0];
 
+bord.append(tr1) 
 
   }
 
@@ -110,6 +113,7 @@ tr1.append(th5)
           </tr>
         </thead>
         <tbody className="bord">
+
           {listItems}
        
         </tbody>
