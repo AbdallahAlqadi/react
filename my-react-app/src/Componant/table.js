@@ -118,6 +118,14 @@ listItems.append(tr1)
       <Button variant="contained" onClick={AddItem}>
         Add
       </Button>
+
+      <form  className='form'>
+<input id='id' type='text' placeholder='Id'></input>
+<input id='name' type='text' placeholder='Name'></input>
+<input id='amount' type='text' placeholder='Amount'></input>
+<input id='spenddate' type='text' placeholder='Spend Date'></input>
+<input id='category' type='text' placeholder='Category'></input>
+      </form>
     </div>
   );
 }
