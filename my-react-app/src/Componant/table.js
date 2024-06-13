@@ -25,16 +25,10 @@ function Table() {
   }
 
   // Delete
-  function DeleteItem(index) {  
-   
-    // items[index].id=null;
-    // items[index].name=null;
-    // items[index].amount=null;
-    // items[index].spendData=null;
-    // items[index].category=null;
-    var deleteitem={id: null, name: null, amount: null, spendData: null, category: null} ;
-    deleteitem=null;
-    setItems([...items])
+  function DeleteItem(index) {
+    const newItems = [...items]; 
+    newItems.splice(index, 1); 
+    setItems(newItems); 
   }
 
  //update
@@ -108,7 +102,7 @@ setItems([...items])
         </Button>
       </td>
       <td className="bord">
-        <Button variant="contained" onClick={() => DeleteItem(items.indexOf(item))}>
+        <Button variant="contained" onClick={() => DeleteItem(item.id)}>
           Delete
         </Button>
       </td>
