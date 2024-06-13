@@ -105,7 +105,7 @@ setItems([...items])
         </Button>
       </td>
       <td className="bord">
-        <Button variant="contained" onClick={() => DeleteItem(item.id)}>
+        <Button variant="contained" onClick={() => DeleteItem(items.indexOf(item))}>
           Delete
         </Button>
       </td>
