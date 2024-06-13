@@ -89,19 +89,19 @@ setItems([...items])
   const listItems = items.map((item) => (
     <tr className="bord">
   <td className="bord">
-    <input type='text' value={item.id} readOnly />
+    <input type='text' value={item.id} />
   </td>
   <td className="bord">
-    <input type='text' value={item.name} readOnly />
+    <input type='text' value={item.name}  />
   </td>
   <td className="bord">
-    <input type='text' value={item.amount} readOnly />
+    <input type='text' value={item.amount}  />
   </td>
   <td className="bord">
-    <input type='text' value={item.spendData} readOnly />
+    <input type='text' value={item.spendData}  />
   </td>
   <td className="bord">
-    <input type='text' value={item.category} readOnly />
+    <input type='text' value={item.category}  />
   </td>
   <td className="bord">
     <Button variant="contained" onClick={() => SeeDetails(item)}>
