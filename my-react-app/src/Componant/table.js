@@ -87,29 +87,39 @@ setItems([...items])
   }
 
   const listItems = items.map((item) => (
-    <tr key={item.id} className="bord">
-      <td className="bord">{item.id}</td>
-      <td className="bord">{item.name}</td>
-      <td className="bord">{item.amount}</td>
-      <td className="bord">{item.spendData}</td>
-      <td className="bord">{item.category}</td>
-      
-      <td className="bord">
-        <Button variant="contained" onClick={() => SeeDetails(item)}>
-          More Info
-        </Button>
-      </td>
-      <td className="bord">
-        <Button variant="contained" onClick={() => UpdateItem(items.indexOf(item))}>
-          Update
-        </Button>
-      </td>
-      <td className="bord">
-        <Button variant="contained" onClick={() => DeleteItem(items.indexOf(item))}>
-          Delete
-        </Button>
-      </td>
-    </tr>
+    <tr className="bord">
+  <td className="bord">
+    <input type='text' value={item.id} readOnly />
+  </td>
+  <td className="bord">
+    <input type='text' value={item.name} readOnly />
+  </td>
+  <td className="bord">
+    <input type='text' value={item.amount} readOnly />
+  </td>
+  <td className="bord">
+    <input type='text' value={item.spendData} readOnly />
+  </td>
+  <td className="bord">
+    <input type='text' value={item.category} readOnly />
+  </td>
+  <td className="bord">
+    <Button variant="contained" onClick={() => SeeDetails(item)}>
+      More Info
+    </Button>
+  </td>
+  <td className="bord">
+    <Button variant="contained" onClick={() => UpdateItem(items.indexOf(item))}>
+      Update
+    </Button>
+  </td>
+  <td className="bord">
+    <Button variant="contained" onClick={() => DeleteItem(items.indexOf(item))}>
+      Delete
+    </Button>
+  </td>
+</tr>
+
   ));
 
   return (
