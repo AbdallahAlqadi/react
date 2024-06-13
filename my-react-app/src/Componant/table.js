@@ -26,9 +26,12 @@ function Table() {
 
   // Delete
   function DeleteItem(index) {
-    const newItems = [...items]; 
-    newItems.splice(index, 1); 
-    setItems(newItems); 
+
+  [...items].splice(index)
+  
+     const newItems = [...items]; 
+     newItems.splice(index, 1); 
+     setItems(newItems); 
   }
 
  //update
