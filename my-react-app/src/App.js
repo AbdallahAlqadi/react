@@ -8,7 +8,7 @@ import Counter from './Componant/counter';
 import reportWebVitals from './reportWebVitals';
 import ClasssPage from './Componant/Classcomponant';
 
-import React, { useState } from 'react';
+import React, { useContext, useState,useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -25,24 +25,14 @@ import { Container,Grid } from '@mui/material';
 import Table from './Componant/table';
 import Deatels from './Componant/details';
 import LifecycleDemo from './Componant/life';
+import { ThemeContext,ThemeProvider } from './Componant/theme';
 
 
 
 
 function App() { //جزئيه routes بتتحقق اذا كبست على NewHeaders بعرض  محتواها
  var [value,setValue]=useState();
- var [theme,setTheme]=useState('light');
- var togtheme= ()=>{
-if(theme==='light'){
-  setTheme('dark')
-  console.log(theme)
-}
-else{
-  setTheme('light')
-  console.log(theme)
 
-}
- }
   const socialMediaLinks = {
     facebook: '#',
     twitter: '#',
@@ -50,16 +40,31 @@ else{
   };
   var maxWidth;
   
+const ThemeToggButton=()=>{
+  const {theme,toggleTheme}=useContext(ThemeContext);
+  useEffect(()=>{
+    document.body.className=theme;
+
+  },[theme]);
+
+  return(
+    <Button onClick={toggleTheme}>
+      change to {theme==='light'?'dark':'light'} theme
+    </Button>
+  )
+  
+}
+
+
   return (
+    <ThemeProvider>
 <BrowserRouter>
 
 <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
         <div id="nav"> 
-
 <ul className='divUl'>
-<li><Link onClick={()=>{togtheme()}}>Change</Link>  </li>
   <li><Link className='navButton' to="/Home"> Home</Link>   </li>
   <li><Link className='navButton' to="/NewHeaders"> NewHeaders</Link>   </li>
   <li> <Link className='navButton' to="/Class"> Class</Link>  </li>
@@ -77,8 +82,10 @@ else{
         </Toolbar>
       </AppBar>
     </Box>
+    <ThemeToggButton id='change'>Change</ThemeToggButton>
 
   <Routes>  
+
   <Route path='/Home' element={<index />}/>
   <Route path='/Class' element={<ClasssPage />}/>
     <Route path='/NewHeaders' element={<NewHeades />}/>
@@ -89,6 +96,7 @@ else{
       <Route path='/table' element={<Table />}/>
       <Route path='/details' element={<Deatels />}/>
       <Route path='/life' element={<LifecycleDemo />}/>
+
   </Routes>
 
 <div className='footer'>
@@ -158,6 +166,7 @@ else{
 
     </div>
 </BrowserRouter>
+</ThemeProvider>
   );
 }
 
