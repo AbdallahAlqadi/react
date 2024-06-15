@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import '../style/table.css';
-import { useState } from 'react';
+import { useEffect,useState } from 'react';
 
 function Table() {
   // JSON data (corrected variable name)
@@ -119,6 +119,10 @@ setItems([...items])
 
   ));
 
+  useEffect(()=>{
+console.log('it fitch')
+
+  })
   return (
     <div>
       <table className="table1" border="5">
