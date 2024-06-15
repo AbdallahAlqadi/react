@@ -25,10 +25,7 @@ function Table() {
   }
 
   // Delete
-  function DeleteItem(index) {
-
-  [...items].splice(index)
-  
+  function DeleteItem(index) {  
      const newItems = [...items]; 
      newItems.splice(index, 1); 
      setItems(newItems); 
@@ -143,7 +140,7 @@ setItems([...items])
        
         </tbody>
       </table>
-      <Button variant="contained" onClick={AddItem}>
+      <Button id='add' variant="contained" onClick={AddItem}>
         Add
       </Button>
 
