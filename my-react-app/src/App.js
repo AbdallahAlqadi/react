@@ -7,7 +7,7 @@ import Page3 from './Componant/Page3';
 import Counter from './Componant/counter';
 import reportWebVitals from './reportWebVitals';
 import ClasssPage from './Componant/Classcomponant';
-
+import { ThemeContext,ThemeProvider } from './Componant/theme';
 import React, { useContext, useState,useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -25,7 +25,7 @@ import { Container,Grid } from '@mui/material';
 import Table from './Componant/table';
 import Deatels from './Componant/details';
 import LifecycleDemo from './Componant/life';
-import { ThemeContext,ThemeProvider } from './Componant/theme';
+
 
 
 

@@ -4,6 +4,7 @@ var ThemeContext=createContext();
 var ThemeProvider=({children})=>{
     var [theme,setTheme]=useState('light');
     var toggletheme= ()=>{
+        console.log('you click')
    if(theme==='light'){
      setTheme('dark')
      console.log(theme)
