@@ -120,9 +120,9 @@ setItems([...items])
   ));
 
   useEffect(()=>{
-console.log('it fitch')
-
-  })
+console.log('it fitch the data')
+alert('it fitch the data')
+  },[items])
   return (
     <div>
       <table className="table1" border="5">

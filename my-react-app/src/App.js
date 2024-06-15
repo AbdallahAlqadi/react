@@ -30,7 +30,19 @@ import LifecycleDemo from './Componant/life';
 
 
 function App() { //جزئيه routes بتتحقق اذا كبست على NewHeaders بعرض  محتواها
+ var [value,setValue]=useState();
+ var [theme,setTheme]=useState('light');
+ var togtheme= ()=>{
+if(theme==='light'){
+  setTheme('dark')
+  console.log(theme)
+}
+else{
+  setTheme('light')
+  console.log(theme)
 
+}
+ }
   const socialMediaLinks = {
     facebook: '#',
     twitter: '#',
@@ -47,6 +59,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
         <div id="nav"> 
 
 <ul className='divUl'>
+<li><Link onClick={()=>{togtheme()}}>Change</Link>  </li>
   <li><Link className='navButton' to="/Home"> Home</Link>   </li>
   <li><Link className='navButton' to="/NewHeaders"> NewHeaders</Link>   </li>
   <li> <Link className='navButton' to="/Class"> Class</Link>  </li>
