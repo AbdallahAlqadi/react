@@ -25,11 +25,8 @@ import { Container,Grid } from '@mui/material';
 import Table from './Componant/table';
 import Deatels from './Componant/details';
 import LifecycleDemo from './Componant/life';
-
-
-
-
-
+import UseRefExample from './Componant/useRef';
+import UseReducerExample from './Componant/reducer';
 function App() { //جزئيه routes بتتحقق اذا كبست على NewHeaders بعرض  محتواها
  var [value,setValue]=useState();
 
@@ -74,6 +71,8 @@ const ThemeToggButton=()=>{
   <li><Link className='navButton' to="/counter"> Counter</Link>  </li>
   <li><Link className='navButton' to="/table"> Table</Link>  </li>
   <li><Link className='navButton' to="/life"> Life</Link>  </li>
+  <li><Link className='navButton' to="/useref"> UseRef</Link>  </li>
+  <li><Link className='navButton' to="/reducer"> Reducer</Link>  </li>
   </ul>
   </div>
           
@@ -96,7 +95,8 @@ const ThemeToggButton=()=>{
       <Route path='/table' element={<Table />}/>
       <Route path='/details' element={<Deatels />}/>
       <Route path='/life' element={<LifecycleDemo />}/>
-
+      <Route path='/useref' element={<UseRefExample />}/>
+      <Route path='/reducer' element={<UseReducerExample />}/>
   </Routes>
 
 <div className='footer'>
