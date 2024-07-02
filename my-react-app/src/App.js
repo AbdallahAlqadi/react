@@ -30,6 +30,10 @@ import UseReducerExample from './Componant/reducer';
 function App() { //جزئيه routes بتتحقق اذا كبست على NewHeaders بعرض  محتواها
  var [value,setValue]=useState();
 
+
+ 
+
+
   const socialMediaLinks = {
     facebook: '#',
     twitter: '#',
@@ -37,20 +41,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
   };
   var maxWidth;
   
-const ThemeToggButton=()=>{
-  const {theme,toggleTheme}=useContext(ThemeContext);
-  useEffect(()=>{
-    document.body.className=theme;
 
-  },[theme]);
-
-  return(
-    <Button onClick={toggleTheme}>
-      change to {theme==='light'?'dark':'light'} theme
-    </Button>
-  )
-  
-}
 
 
   return (
@@ -62,7 +53,8 @@ const ThemeToggButton=()=>{
         <Toolbar>
         <div id="nav"> 
 <ul className='divUl'>
-  <li><Link className='navButton' to="/Home"> Home</Link>   </li>
+ <li><Link className='navButton' to="/Home">< ThemeTogglButton/> </Link> </li>
+<li><Link className='navButton' to="/Home"> Home</Link>   </li>
   <li><Link className='navButton' to="/NewHeaders"> NewHeaders</Link>   </li>
   <li> <Link className='navButton' to="/Class"> Class</Link>  </li>
   <li> <Link className='navButton' to="/page1"> Page1</Link>   </li>
@@ -81,7 +73,7 @@ const ThemeToggButton=()=>{
         </Toolbar>
       </AppBar>
     </Box>
-    <ThemeToggButton id='change'>Change</ThemeToggButton>
+    <ThemeTogglButton id='change'>Change</ThemeTogglButton>
 
   <Routes>  
 
@@ -169,5 +161,22 @@ const ThemeToggButton=()=>{
 </ThemeProvider>
   );
 }
+
+const ThemeTogglButton=()=>{
+  const {theme,toggletheme}=useContext(ThemeContext);
+  useEffect(()=>{
+    document.body.className=theme;
+
+  },[theme]);
+
+  return(
+    <Button onClick={toggletheme}>
+      change to {theme==='light'?'dark':'light'} theme
+    </Button>
+  );
+  
+};
+
+
 
 export default App;
