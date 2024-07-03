@@ -50,6 +50,8 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
 
   return (
     <ThemeProvider>
+          <DirProvider>
+
 <BrowserRouter>
 
 <Box sx={{ flexGrow: 1 }}>
@@ -58,6 +60,8 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
         <div id="nav"> 
 <ul className='divUl'>
  <li><Link className='navButton' to="/Home">< ThemeTogglButton/> </Link> </li>
+ <li><Link className='navButton' to="/Home">< DirButtontoggle/> </Link> </li>
+
 <li><Link className='navButton' to="/Home"> Home</Link>   </li>
   <li><Link className='navButton' to="/NewHeaders"> NewHeaders</Link>   </li>
   <li> <Link className='navButton' to="/Class"> Class</Link>  </li>
@@ -162,15 +166,16 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
 
     </div>
 </BrowserRouter>
+</DirProvider>
 </ThemeProvider>
   );
 }
+
 
 const ThemeTogglButton=()=>{
   const {theme,toggletheme}=useContext(ThemeContext);
   useEffect(()=>{
     document.body.className=theme;
-    document.body.dir='rtl';
 
   },[theme]);
 
@@ -179,9 +184,22 @@ const ThemeTogglButton=()=>{
       change to {theme==='light'?'dark':'light'} theme
     </Button>
   );
-  
+    
 };
 
+const DirButtontoggle=()=>{
+  const {Dir,toggleDir}=useContext(DirContext);
 
+useEffect(()=>{
+  document.body.className=Dir
+
+},[Dir])
+
+  return(
+    <Button onClick={toggleDir}>
+      change to {Dir==='ltr'?'rtl':'ltr'} Dir 
+    </Button>
+  )
+};
 
 export default App;
