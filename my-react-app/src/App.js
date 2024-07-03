@@ -1,4 +1,6 @@
-import './style/styleapp.css'
+ import './style/styleapp.css'
+import './App.css'
+
 import {BrowserRouter,Link,Route,Routes} from'react-router-dom';
 import NewHeades from './Componant/NewHeades';
 import Page1 from './Componant/Page1';
@@ -8,6 +10,8 @@ import Counter from './Componant/counter';
 import reportWebVitals from './reportWebVitals';
 import ClasssPage from './Componant/Classcomponant';
 import { ThemeContext,ThemeProvider } from './Componant/theme';
+import { DirContext,DirProvider } from './Componant/dir';
+
 import React, { useContext, useState,useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -166,6 +170,7 @@ const ThemeTogglButton=()=>{
   const {theme,toggletheme}=useContext(ThemeContext);
   useEffect(()=>{
     document.body.className=theme;
+    document.body.dir='rtl';
 
   },[theme]);
 
