@@ -81,7 +81,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
         </Toolbar>
       </AppBar>
     </Box>
-    <ThemeTogglButton id='change'>Change</ThemeTogglButton>
+    {/* <ThemeTogglButton id='change'>Change</ThemeTogglButton> */}
 
   <Routes>  
 
