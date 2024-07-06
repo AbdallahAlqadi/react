@@ -171,7 +171,7 @@ function App() { //جزئيه routes بتتحقق اذا كبست على NewHead
   );
 }
 
-
+// تابعه لصفحه theam
 const ThemeTogglButton=()=>{
   const {theme,toggletheme}=useContext(ThemeContext);
   useEffect(()=>{
@@ -187,6 +187,8 @@ const ThemeTogglButton=()=>{
     
 };
 
+
+// تابعه لصفحه dir
 const DirButtontoggle=()=>{
   const {Dir,toggleDir}=useContext(DirContext);
 
