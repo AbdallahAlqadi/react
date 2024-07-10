@@ -1,36 +1,9 @@
  import './style/styleapp.css'
 import './App.css'
-
+import React from 'react';
 import {BrowserRouter,Link,Route,Routes} from'react-router-dom';
-import NewHeades from './Componant/NewHeades';
-import Page1 from './Componant/Page1';
-import Page2 from './Componant/ExpandMoreProps';
-import Page3 from './Componant/Page3';
-import Counter from './Componant/counter';
-import reportWebVitals from './reportWebVitals';
-import ClasssPage from './Componant/Classcomponant';
-import { ThemeContext,ThemeProvider } from './Componant/theme';
-import { DirContext,DirProvider } from './Componant/dir';
 
-import React, { useContext, useState,useEffect } from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import logo from './logo.svg';
-import ReactDOM from 'react-dom'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import { Container,Grid } from '@mui/material';
-import Table from './Componant/table';
-import Deatels from './Componant/details';
-import LifecycleDemo from './Componant/life';
-import UseRefExample from './Componant/useRef';
-import UseReducerExample from './Componant/reducer';
+
 function App() { //جزئيه routes بتتحقق اذا كبست على NewHeaders بعرض  محتواها
  var [value,setValue]=useState();
 
