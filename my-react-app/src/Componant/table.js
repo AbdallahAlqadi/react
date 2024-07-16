@@ -100,6 +100,7 @@ setItems([...items])
   <td className="bord">
     <input type='text' value={item.category}  />
   </td>
+  
   <td className="bord">
     <Button variant="contained" onClick={() => SeeDetails(item)}>
       More Info
