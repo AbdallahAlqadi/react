@@ -5,17 +5,17 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { DirProvider } from './context/DirProvider'; // Replace with your actual provider
 import { Box, AppBar, Toolbar, Container, Grid, Typography, IconButton, Button } from '@mui/material';
 import { Facebook as FacebookIcon, Twitter as TwitterIcon, Instagram as InstagramIcon } from '@mui/icons-material';
-import ClasssPage from './Componant/ClasssPage';
+import ClasssPage from './Componant/Classcomponant';
 import Page1 from './Componant/Page1';
 import Page3 from './Componant/Page3';
 import Counter from './Componant/counter';
-import NewHeaders from './Componant/NewHeaders';
+import NewHeaders from './Componant/NewHeades';
 import Table from './Componant/table';
-import Details from './Componant/Details';
-import LifecycleDemo from './Componant/LifecycleDemo';
-import UseRefExample from './Componant/UseRefExample';
-import UseReducerExample from './Componant/UseReducerExample';
-import { ThemeContext, DirContext } from './context'; // Make sure this path is correct
+import Details from './Componant/details';
+import LifecycleDemo from './Componant/life';
+import UseRefExample from './Componant/useRef';
+import UseReducerExample from './Componant/reducer';
+import { ThemeContext, DirContext } from './Componant/context'; // Make sure this path is correct
 
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
