@@ -1,5 +1,5 @@
   //   import React(اسم fun) from 'react'(اسم الصفحه);
-  import React from 'react';//هاي مهمه
+  import React,{useEffect,useContext,usesta} from 'react';//هاي مهمه
 import ReactDOM from 'react-dom/client';//هاي مهمه
 import './index.css';
 import App from './App'; //هاي مهمه
