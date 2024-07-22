@@ -1,7 +1,9 @@
 import React,{useReducer} from "react";
 
-const initalState={'count':0};
 
+// في طريقه ثانيه اها  SCRIPT TYPEستخدمنا
+const initalState={'count':0};
+  
 const reducer=(state,action)=>{
     switch(action.type){
 
