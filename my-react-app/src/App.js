@@ -2,7 +2,7 @@ import './style/styleapp.css';
 import './App.css';
 import React, { useState, useContext, useEffect } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { DirProvider } from './context/DirProvider'; 
+import { DirProvider } from './Componant/dir';
 import { Box, AppBar, Toolbar, Container, Grid, Typography, IconButton, Button } from '@mui/material';
 import { Facebook as FacebookIcon, Twitter as TwitterIcon, Instagram as InstagramIcon } from '@mui/icons-material';
 import ClasssPage from './Componant/Classcomponant';
