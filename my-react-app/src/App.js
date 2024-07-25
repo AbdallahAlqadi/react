@@ -15,8 +15,8 @@ import Details from './Componant/details';
 import LifecycleDemo from './Componant/life';
 import UseRefExample from './Componant/useRef';
 import UseReducerExample from './Componant/reducer';
-import { ThemeContext, DirContext } from './Componant/context'; // Make sure this path is correct
-
+import { ThemeContext} from './Componant/theme'; // Make sure this path is correct
+import { DirContext } from './Componant/dir';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
 const theme = createTheme({
@@ -40,6 +40,7 @@ function App() {
   };
 
   return (
+    
     <ThemeProvider theme={theme}>
       <DirProvider>
         <BrowserRouter>
