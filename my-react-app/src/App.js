@@ -86,6 +86,7 @@ const {dir,toggleDir} = useContext(DirContext);
 
 useEffect(()=>{
   document.body.className = dir;
+
 },dir)
 
 return(

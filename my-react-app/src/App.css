@@ -20,3 +20,8 @@ color: white;
 .rtl{
   direction: rtl;
 }
+
+
+.bord{
+  background-color: chartreuse;
+}
