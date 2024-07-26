@@ -14,7 +14,7 @@ function Table() {
     { id: '5', name: 'Saleh', amount: '500', spendData: '2024-2-1', category: 'category5' },
    ])
 
-  // const [items, setItems] = useState(itemsData); // Initialize state with data
+  
   const navigate = useNavigate();
 
   function SeeDetails(item) {
