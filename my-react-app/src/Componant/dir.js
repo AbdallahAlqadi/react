@@ -1,19 +1,28 @@
-import React, {  createContext, useState } from "react";
+import React, { createContext, useState } from 'react';
 
 const DirContext = createContext();
 
-const DirProvider = ({ children }) => {
-    const [Dir, setDir] = useState('ltr');
+const DirProvider =({children})=> {
+  const [dir, setDir] = useState("ltr");
 
-    const toggleDir = () => {
-        setDir((prevDir) => (prevDir === 'ltr' ? 'rtl' : 'ltr'));
-    };
+  const toggleDir = () =>
+  {
+    if(dir === 'ltr'){
+        setDir('rtl')
+    }
+    else
+    {
+        setDir('ltr')
+      console.log(dir)
+    }
+  }
 
-    return (
-        <DirContext.Provider value={{ Dir, toggleDir }}>
-            {children}
-        </DirContext.Provider>
-    );
-};
+  return (
+    <DirContext.Provider value={{dir,toggleDir}}>
+        {children}
+      
+    </DirContext.Provider>
+  );
+}
 
-export { DirContext, DirProvider };
+export {DirContext,DirProvider};
