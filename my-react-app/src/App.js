@@ -6,7 +6,7 @@ import { DirProvider } from './Componant/dir';
 import ClasssPage from './Componant/Classcomponant';
 // import Page1 from './Componant/Page1';
 // import Page3 from './Componant/Page3';
-// import Counter from './Componant/counter';
+//  import Counter from './Componant/counter';
 import NewHeaders from './Componant/NewHeades';
 import TableWithState from './Componant/table';
 import Details from './Componant/details';
@@ -59,6 +59,8 @@ function App() {
 
         </Routes>
       </BrowserRouter>
+             
+
       </DirProvider>
     </ThemeProvider>
    
