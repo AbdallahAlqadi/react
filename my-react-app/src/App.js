@@ -45,6 +45,7 @@ function App() {
         </div>
 
         <Routes>
+
           <Route path='/table' element={<TableWithState />}></Route>
           <Route path='/details' element={<Details />}></Route>
           <Route path='/classComponent' element={<ClasssPage />}></Route>
